@@ -12,8 +12,6 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     private CalendarView calendarView;
-    private TextView selectedDate;
-    private Button addEventButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
