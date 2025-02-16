@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         calendarView = findViewById(R.id.calendarView);
-        addEventButton = findViewById(R.id.addEventButton);
+        
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
@@ -29,12 +29,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        addEventButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // 这里实现添加事件的逻辑
-                Toast.makeText(MainActivity.this, "添加事件", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 } 
